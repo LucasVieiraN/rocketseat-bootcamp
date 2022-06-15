@@ -1,11 +1,11 @@
 import "reflect-metadata";
+import "./shared/container";
 import express, { NextFunction, Request, Response } from "express";
 import "express-async-errors";
 import swaggerUi from "swagger-ui-express";
 
 import { createConnection } from "./database/data-source";
 import { AppError } from "./errors/AppError";
-import "./shared/container";
 import { router } from "./routes";
 import swaggerFile from "./swagger.json";
 
@@ -36,4 +36,4 @@ app.use(
   }
 );
 
-app.listen(3333, () => console.log("Server is running!"));
+app.listen(3334, () => console.log("Server is running!"));

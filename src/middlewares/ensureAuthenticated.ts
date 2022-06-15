@@ -24,7 +24,7 @@ export async function ensureAuthenticated(
   try {
     const { sub: user_id } = verify(
       token,
-      "cfe275a5908b5650488e0b0342c2d6cc"
+      "7eb61b6ffead24a1a71250705fb4549d"
     ) as IPayload;
 
     const usersRepository = new UsersRepository();

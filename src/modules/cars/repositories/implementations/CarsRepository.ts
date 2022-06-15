@@ -1,9 +1,9 @@
 import { Repository } from "typeorm";
 
-import AppDataSource from "../../../../../database/data-source";
-import { ICreateCarDTO } from "../../../dtos/ICreateCarDTO";
-import { ICarsRepository } from "../../../repositories/ICarsRepository";
-import { Car } from "../entities/Car";
+import AppDataSource from "../../../../database/data-source";
+import { ICreateCarDTO } from "../../dtos/ICreateCarDTO";
+import { Car } from "../../entities/Car";
+import { ICarsRepository } from "../ICarsRepository";
 
 class CarsRepository implements ICarsRepository {
   private repository: Repository<Car>;

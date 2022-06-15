@@ -12,7 +12,7 @@ const AppDataSource = new DataSource({
   migrations: ["./src/database/migrations/*.ts"],
 });
 
-export function createConnection(host = "database"): Promise<DataSource> {
+export function createConnection(host = "localhost"): Promise<DataSource> {
   return AppDataSource.setOptions({ host }).initialize();
 }
 
