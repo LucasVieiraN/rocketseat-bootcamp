@@ -1,5 +1,6 @@
 import { ICreateUserTokenDTO } from "../dtos/ICreateUserTokenDTO";
 import { UserTokens } from "../entities/UserTokens";
+import { DayjsDateProvider } from "../../../shared/container/providers/DateProvider/implementations/DayjsDateProvider";
 
 interface IUsersTokensRepository {
   create({

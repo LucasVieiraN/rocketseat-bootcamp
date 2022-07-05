@@ -40,7 +40,7 @@ export async function ensureAuthenticated(
     }
 
     request.user = {
-      id: user_id,
+      id: user.user_id,
     };
 
     next();
