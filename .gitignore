@@ -1,8 +1,8 @@
 .idea/
 .vscode/
+coverage
 node_modules/
 build/
 tmp/
 temp/
-coverage/
 .editorconfig
